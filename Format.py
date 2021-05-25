@@ -260,7 +260,8 @@ class VOC:
 
                 objects = root.findall("object")
                 if len(objects) == 0:
-                    return False, "number object zero"
+                    print(f"{filename}: number object zero")
+                    continue
 
                 obj = {
                     "num_obj": len(objects)
